@@ -6,6 +6,6 @@ export default function RockPaperScissorPage(){
         <RockPaperScissorGame players={[
             { name: "Player1" },
             { name: "Player2" },
-        ]}/>
+        ]} startingPlayer="Player1"/>
     );
 }
