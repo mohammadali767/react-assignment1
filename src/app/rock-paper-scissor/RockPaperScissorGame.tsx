@@ -55,6 +55,12 @@ const determineRoundWinner = (players: GameState["players"]): string | undefined
     }
 }
 
+/**
+ * Note: The Rock-Paper-Scissor implemented by this game
+ * does NOT allow a tie, i.e, there is always a winner.
+ * This is because one a player picks a symbol (by chance),
+ * the other player is not allowed to pick that symbol again.
+ */
 export default function RockPaperScissorGame({ players, startingPlayer }: RockPaperScissorGameProps) {
     const [gameState, setGameState ] = useState<GameState>(() => {
         return {
